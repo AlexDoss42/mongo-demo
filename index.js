@@ -12,3 +12,10 @@ const courseSchema = new mongoose.Schema({
   isPublished: Boolean
 });
 
+const Course = mongoose.model('Cousre', courseSchema);
+const course = new Course({
+  name: "Node.js Course",
+  author: "Mosh",
+  tags: ["Node", "Backend"],
+  isPublished: true
+});
