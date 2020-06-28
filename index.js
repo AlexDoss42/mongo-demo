@@ -64,4 +64,9 @@ async function updateCourse2(id) {
   console.log(result);
 }
 
+async function removeCourse(id) {
+  const course = await Course.findByIdAndRemove({ _id: id });
+  console.log(course);
+}
+
 createCourse();
