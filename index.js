@@ -54,12 +54,12 @@ async function updateCourse(id) {
 }
 
 async function updateCourse2(id) {
-  const result = await Course.update({ _id: id }, {
+  const result = await Course.findByIdAndUpdate({ _id: id }, {
     $set: {
       author: "Mosh",
       isPublished: false
     }
-  });
+  }, { new: true });
 
   console.log(result);
 }
