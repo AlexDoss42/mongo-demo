@@ -18,7 +18,10 @@ user = new User({
 
 await user.save();
 
-res.send(user);
+res.send({
+  name: user.name,
+  email: user.email
+});
 
 });
 
