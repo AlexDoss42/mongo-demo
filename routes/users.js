@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const {User, validate} = require('../user');
 const mongoose = require('mongoose');
 const express = require('express');
