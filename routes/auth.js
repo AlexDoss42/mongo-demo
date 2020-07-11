@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt');
 const {User, validate} = require('../user');
 const mongoose = require('mongoose');
 const express = require('express');
-const { JsonWebTokenError } = require('jsonwebtoken');
 const router = express.Router();
 
 router.post('/', async(req, res) =>{
