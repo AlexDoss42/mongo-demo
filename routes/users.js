@@ -19,10 +19,7 @@ user = new User({
 
 await user.save();
 
-res.send({
-  name: user.name,
-  email: user.email
-});
+res.send(_.pick(user, ['name', 'email']));
 
 });
 
